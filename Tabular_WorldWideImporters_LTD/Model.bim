@@ -1,0 +1,799 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1400,
+  "model": {
+    "culture": "en-US",
+    "dataSources": [
+      {
+        "type": "structured",
+        "name": "SQL/test-cms-asql-dev-srv01 database windows net;WorldWideImporters_LTD",
+        "connectionDetails": {
+          "protocol": "tds",
+          "address": {
+            "server": "test-cms-asql-dev-srv01.database.windows.net",
+            "database": "WorldWideImporters_LTD"
+          },
+          "authentication": null,
+          "query": null
+        },
+        "options": {},
+        "credential": {
+          "AuthenticationKind": "UsernamePassword",
+          "Username": "cmsadmin",
+          "EncryptConnection": true
+        }
+      }
+    ],
+    "tables": [
+      {
+        "name": "Application People",
+        "columns": [
+          {
+            "name": "PersonID",
+            "dataType": "int64",
+            "sourceColumn": "PersonID"
+          },
+          {
+            "name": "FullName",
+            "dataType": "string",
+            "sourceColumn": "FullName"
+          },
+          {
+            "name": "PreferredName",
+            "dataType": "string",
+            "sourceColumn": "PreferredName"
+          },
+          {
+            "name": "SearchName",
+            "dataType": "string",
+            "sourceColumn": "SearchName"
+          },
+          {
+            "name": "IsPermittedToLogon",
+            "dataType": "boolean",
+            "sourceColumn": "IsPermittedToLogon"
+          },
+          {
+            "name": "LogonName",
+            "dataType": "string",
+            "sourceColumn": "LogonName"
+          },
+          {
+            "name": "IsExternalLogonProvider",
+            "dataType": "boolean",
+            "sourceColumn": "IsExternalLogonProvider"
+          },
+          {
+            "name": "IsSystemUser",
+            "dataType": "boolean",
+            "sourceColumn": "IsSystemUser"
+          },
+          {
+            "name": "IsEmployee",
+            "dataType": "boolean",
+            "sourceColumn": "IsEmployee"
+          },
+          {
+            "name": "IsSalesperson",
+            "dataType": "boolean",
+            "sourceColumn": "IsSalesperson"
+          },
+          {
+            "name": "UserPreferences",
+            "dataType": "string",
+            "sourceColumn": "UserPreferences"
+          },
+          {
+            "name": "PhoneNumber",
+            "dataType": "string",
+            "sourceColumn": "PhoneNumber"
+          },
+          {
+            "name": "FaxNumber",
+            "dataType": "string",
+            "sourceColumn": "FaxNumber"
+          },
+          {
+            "name": "EmailAddress",
+            "dataType": "string",
+            "sourceColumn": "EmailAddress"
+          },
+          {
+            "name": "CustomFields",
+            "dataType": "string",
+            "sourceColumn": "CustomFields"
+          },
+          {
+            "name": "OtherLanguages",
+            "dataType": "string",
+            "sourceColumn": "OtherLanguages"
+          },
+          {
+            "name": "LastEditedBy",
+            "dataType": "int64",
+            "sourceColumn": "LastEditedBy"
+          },
+          {
+            "name": "ValidFrom",
+            "dataType": "dateTime",
+            "sourceColumn": "ValidFrom"
+          },
+          {
+            "name": "ValidTo",
+            "dataType": "dateTime",
+            "sourceColumn": "ValidTo"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/test-cms-asql-dev-srv01 database windows net;WorldWideImporters_LTD\",",
+                "    Application_People = Source{[Schema=\"Application\",Item=\"People\"]}[Data]",
+                "in",
+                "    Application_People"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sales Customers",
+        "columns": [
+          {
+            "name": "CustomerID",
+            "dataType": "int64",
+            "sourceColumn": "CustomerID"
+          },
+          {
+            "name": "CustomerName",
+            "dataType": "string",
+            "sourceColumn": "CustomerName"
+          },
+          {
+            "name": "BillToCustomerID",
+            "dataType": "int64",
+            "sourceColumn": "BillToCustomerID"
+          },
+          {
+            "name": "CustomerCategoryID",
+            "dataType": "int64",
+            "sourceColumn": "CustomerCategoryID"
+          },
+          {
+            "name": "BuyingGroupID",
+            "dataType": "int64",
+            "sourceColumn": "BuyingGroupID"
+          },
+          {
+            "name": "PrimaryContactPersonID",
+            "dataType": "int64",
+            "sourceColumn": "PrimaryContactPersonID"
+          },
+          {
+            "name": "AlternateContactPersonID",
+            "dataType": "int64",
+            "sourceColumn": "AlternateContactPersonID"
+          },
+          {
+            "name": "DeliveryMethodID",
+            "dataType": "int64",
+            "sourceColumn": "DeliveryMethodID"
+          },
+          {
+            "name": "DeliveryCityID",
+            "dataType": "int64",
+            "sourceColumn": "DeliveryCityID"
+          },
+          {
+            "name": "PostalCityID",
+            "dataType": "int64",
+            "sourceColumn": "PostalCityID"
+          },
+          {
+            "name": "CreditLimit",
+            "dataType": "double",
+            "sourceColumn": "CreditLimit"
+          },
+          {
+            "name": "AccountOpenedDate",
+            "dataType": "dateTime",
+            "sourceColumn": "AccountOpenedDate"
+          },
+          {
+            "name": "StandardDiscountPercentage",
+            "dataType": "double",
+            "sourceColumn": "StandardDiscountPercentage"
+          },
+          {
+            "name": "IsStatementSent",
+            "dataType": "boolean",
+            "sourceColumn": "IsStatementSent"
+          },
+          {
+            "name": "IsOnCreditHold",
+            "dataType": "boolean",
+            "sourceColumn": "IsOnCreditHold"
+          },
+          {
+            "name": "PaymentDays",
+            "dataType": "int64",
+            "sourceColumn": "PaymentDays"
+          },
+          {
+            "name": "PhoneNumber",
+            "dataType": "string",
+            "sourceColumn": "PhoneNumber"
+          },
+          {
+            "name": "FaxNumber",
+            "dataType": "string",
+            "sourceColumn": "FaxNumber"
+          },
+          {
+            "name": "DeliveryRun",
+            "dataType": "string",
+            "sourceColumn": "DeliveryRun"
+          },
+          {
+            "name": "RunPosition",
+            "dataType": "string",
+            "sourceColumn": "RunPosition"
+          },
+          {
+            "name": "WebsiteURL",
+            "dataType": "string",
+            "sourceColumn": "WebsiteURL"
+          },
+          {
+            "name": "DeliveryAddressLine1",
+            "dataType": "string",
+            "sourceColumn": "DeliveryAddressLine1"
+          },
+          {
+            "name": "DeliveryAddressLine2",
+            "dataType": "string",
+            "sourceColumn": "DeliveryAddressLine2"
+          },
+          {
+            "name": "DeliveryPostalCode",
+            "dataType": "string",
+            "sourceColumn": "DeliveryPostalCode"
+          },
+          {
+            "name": "DeliveryLocation",
+            "dataType": "string",
+            "sourceColumn": "DeliveryLocation"
+          },
+          {
+            "name": "PostalAddressLine1",
+            "dataType": "string",
+            "sourceColumn": "PostalAddressLine1"
+          },
+          {
+            "name": "PostalAddressLine2",
+            "dataType": "string",
+            "sourceColumn": "PostalAddressLine2"
+          },
+          {
+            "name": "PostalPostalCode",
+            "dataType": "string",
+            "sourceColumn": "PostalPostalCode"
+          },
+          {
+            "name": "LastEditedBy",
+            "dataType": "int64",
+            "sourceColumn": "LastEditedBy"
+          },
+          {
+            "name": "ValidFrom",
+            "dataType": "dateTime",
+            "sourceColumn": "ValidFrom"
+          },
+          {
+            "name": "ValidTo",
+            "dataType": "dateTime",
+            "sourceColumn": "ValidTo"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/test-cms-asql-dev-srv01 database windows net;WorldWideImporters_LTD\",",
+                "    Sales_Customers = Source{[Schema=\"Sales\",Item=\"Customers\"]}[Data]",
+                "in",
+                "    Sales_Customers"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sales Invoices",
+        "columns": [
+          {
+            "name": "InvoiceID",
+            "dataType": "int64",
+            "sourceColumn": "InvoiceID"
+          },
+          {
+            "name": "CustomerID",
+            "dataType": "int64",
+            "sourceColumn": "CustomerID"
+          },
+          {
+            "name": "BillToCustomerID",
+            "dataType": "int64",
+            "sourceColumn": "BillToCustomerID"
+          },
+          {
+            "name": "OrderID",
+            "dataType": "int64",
+            "sourceColumn": "OrderID"
+          },
+          {
+            "name": "DeliveryMethodID",
+            "dataType": "int64",
+            "sourceColumn": "DeliveryMethodID"
+          },
+          {
+            "name": "ContactPersonID",
+            "dataType": "int64",
+            "sourceColumn": "ContactPersonID"
+          },
+          {
+            "name": "AccountsPersonID",
+            "dataType": "int64",
+            "sourceColumn": "AccountsPersonID"
+          },
+          {
+            "name": "SalespersonPersonID",
+            "dataType": "int64",
+            "sourceColumn": "SalespersonPersonID"
+          },
+          {
+            "name": "PackedByPersonID",
+            "dataType": "int64",
+            "sourceColumn": "PackedByPersonID"
+          },
+          {
+            "name": "InvoiceDate",
+            "dataType": "dateTime",
+            "sourceColumn": "InvoiceDate"
+          },
+          {
+            "name": "CustomerPurchaseOrderNumber",
+            "dataType": "string",
+            "sourceColumn": "CustomerPurchaseOrderNumber"
+          },
+          {
+            "name": "IsCreditNote",
+            "dataType": "boolean",
+            "sourceColumn": "IsCreditNote"
+          },
+          {
+            "name": "CreditNoteReason",
+            "dataType": "string",
+            "sourceColumn": "CreditNoteReason"
+          },
+          {
+            "name": "Comments",
+            "dataType": "string",
+            "sourceColumn": "Comments"
+          },
+          {
+            "name": "DeliveryInstructions",
+            "dataType": "string",
+            "sourceColumn": "DeliveryInstructions"
+          },
+          {
+            "name": "InternalComments",
+            "dataType": "string",
+            "sourceColumn": "InternalComments"
+          },
+          {
+            "name": "TotalDryItems",
+            "dataType": "int64",
+            "sourceColumn": "TotalDryItems"
+          },
+          {
+            "name": "TotalChillerItems",
+            "dataType": "int64",
+            "sourceColumn": "TotalChillerItems"
+          },
+          {
+            "name": "DeliveryRun",
+            "dataType": "string",
+            "sourceColumn": "DeliveryRun"
+          },
+          {
+            "name": "RunPosition",
+            "dataType": "string",
+            "sourceColumn": "RunPosition"
+          },
+          {
+            "name": "ReturnedDeliveryData",
+            "dataType": "string",
+            "sourceColumn": "ReturnedDeliveryData"
+          },
+          {
+            "name": "ConfirmedDeliveryTime",
+            "dataType": "dateTime",
+            "sourceColumn": "ConfirmedDeliveryTime"
+          },
+          {
+            "name": "ConfirmedReceivedBy",
+            "dataType": "string",
+            "sourceColumn": "ConfirmedReceivedBy"
+          },
+          {
+            "name": "LastEditedBy",
+            "dataType": "int64",
+            "sourceColumn": "LastEditedBy"
+          },
+          {
+            "name": "LastEditedWhen",
+            "dataType": "dateTime",
+            "sourceColumn": "LastEditedWhen"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/test-cms-asql-dev-srv01 database windows net;WorldWideImporters_LTD\",",
+                "    Sales_Invoices = Source{[Schema=\"Sales\",Item=\"Invoices\"]}[Data]",
+                "in",
+                "    Sales_Invoices"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sales OrderLines",
+        "columns": [
+          {
+            "name": "OrderLineID",
+            "dataType": "int64",
+            "sourceColumn": "OrderLineID"
+          },
+          {
+            "name": "OrderID",
+            "dataType": "int64",
+            "sourceColumn": "OrderID"
+          },
+          {
+            "name": "StockItemID",
+            "dataType": "int64",
+            "sourceColumn": "StockItemID"
+          },
+          {
+            "name": "Description",
+            "dataType": "string",
+            "sourceColumn": "Description"
+          },
+          {
+            "name": "PackageTypeID",
+            "dataType": "int64",
+            "sourceColumn": "PackageTypeID"
+          },
+          {
+            "name": "Quantity",
+            "dataType": "int64",
+            "sourceColumn": "Quantity"
+          },
+          {
+            "name": "UnitPrice",
+            "dataType": "double",
+            "sourceColumn": "UnitPrice"
+          },
+          {
+            "name": "TaxRate",
+            "dataType": "double",
+            "sourceColumn": "TaxRate"
+          },
+          {
+            "name": "PickedQuantity",
+            "dataType": "int64",
+            "sourceColumn": "PickedQuantity"
+          },
+          {
+            "name": "PickingCompletedWhen",
+            "dataType": "dateTime",
+            "sourceColumn": "PickingCompletedWhen"
+          },
+          {
+            "name": "LastEditedBy",
+            "dataType": "int64",
+            "sourceColumn": "LastEditedBy"
+          },
+          {
+            "name": "LastEditedWhen",
+            "dataType": "dateTime",
+            "sourceColumn": "LastEditedWhen"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/test-cms-asql-dev-srv01 database windows net;WorldWideImporters_LTD\",",
+                "    Sales_OrderLines = Source{[Schema=\"Sales\",Item=\"OrderLines\"]}[Data]",
+                "in",
+                "    Sales_OrderLines"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sales Orders",
+        "columns": [
+          {
+            "name": "OrderID",
+            "dataType": "int64",
+            "sourceColumn": "OrderID"
+          },
+          {
+            "name": "CustomerID",
+            "dataType": "int64",
+            "sourceColumn": "CustomerID"
+          },
+          {
+            "name": "SalespersonPersonID",
+            "dataType": "int64",
+            "sourceColumn": "SalespersonPersonID"
+          },
+          {
+            "name": "PickedByPersonID",
+            "dataType": "int64",
+            "sourceColumn": "PickedByPersonID"
+          },
+          {
+            "name": "ContactPersonID",
+            "dataType": "int64",
+            "sourceColumn": "ContactPersonID"
+          },
+          {
+            "name": "BackorderOrderID",
+            "dataType": "int64",
+            "sourceColumn": "BackorderOrderID"
+          },
+          {
+            "name": "OrderDate",
+            "dataType": "dateTime",
+            "sourceColumn": "OrderDate"
+          },
+          {
+            "name": "ExpectedDeliveryDate",
+            "dataType": "dateTime",
+            "sourceColumn": "ExpectedDeliveryDate"
+          },
+          {
+            "name": "CustomerPurchaseOrderNumber",
+            "dataType": "string",
+            "sourceColumn": "CustomerPurchaseOrderNumber"
+          },
+          {
+            "name": "IsUndersupplyBackordered",
+            "dataType": "boolean",
+            "sourceColumn": "IsUndersupplyBackordered"
+          },
+          {
+            "name": "Comments",
+            "dataType": "string",
+            "sourceColumn": "Comments"
+          },
+          {
+            "name": "DeliveryInstructions",
+            "dataType": "string",
+            "sourceColumn": "DeliveryInstructions"
+          },
+          {
+            "name": "InternalComments",
+            "dataType": "string",
+            "sourceColumn": "InternalComments"
+          },
+          {
+            "name": "PickingCompletedWhen",
+            "dataType": "dateTime",
+            "sourceColumn": "PickingCompletedWhen"
+          },
+          {
+            "name": "LastEditedBy",
+            "dataType": "int64",
+            "sourceColumn": "LastEditedBy"
+          },
+          {
+            "name": "LastEditedWhen",
+            "dataType": "dateTime",
+            "sourceColumn": "LastEditedWhen"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/test-cms-asql-dev-srv01 database windows net;WorldWideImporters_LTD\",",
+                "    Sales_Orders = Source{[Schema=\"Sales\",Item=\"Orders\"]}[Data]",
+                "in",
+                "    Sales_Orders"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "628fd1dd-d47c-4e9f-9bac-169ea610a615",
+        "fromTable": "Sales Customers",
+        "fromColumn": "AlternateContactPersonID",
+        "toTable": "Application People",
+        "toColumn": "PersonID",
+        "isActive": false
+      },
+      {
+        "name": "ef79f9b3-9de3-453c-ae23-48ed0e1e81bf",
+        "fromTable": "Sales Customers",
+        "fromColumn": "LastEditedBy",
+        "toTable": "Application People",
+        "toColumn": "PersonID",
+        "isActive": false
+      },
+      {
+        "name": "e5771a3f-5486-49ee-9a05-da98d36f48ff",
+        "fromTable": "Sales Invoices",
+        "fromColumn": "AccountsPersonID",
+        "toTable": "Application People",
+        "toColumn": "PersonID",
+        "isActive": false
+      },
+      {
+        "name": "be3b6c16-b8f0-4b2b-83e1-39aa01444820",
+        "fromTable": "Sales Invoices",
+        "fromColumn": "LastEditedBy",
+        "toTable": "Application People",
+        "toColumn": "PersonID",
+        "isActive": false
+      },
+      {
+        "name": "e1bd1e42-09a9-430d-a01a-0d4901be6aaf",
+        "fromTable": "Sales Invoices",
+        "fromColumn": "PackedByPersonID",
+        "toTable": "Application People",
+        "toColumn": "PersonID",
+        "isActive": false
+      },
+      {
+        "name": "8f4beeb2-9a07-4a64-a8ba-98d887b62f7c",
+        "fromTable": "Sales Invoices",
+        "fromColumn": "SalespersonPersonID",
+        "toTable": "Application People",
+        "toColumn": "PersonID",
+        "isActive": false
+      },
+      {
+        "name": "0bb92816-5274-4ecf-ab41-b2e312d05bae",
+        "fromTable": "Sales Orders",
+        "fromColumn": "ContactPersonID",
+        "toTable": "Application People",
+        "toColumn": "PersonID",
+        "isActive": false
+      },
+      {
+        "name": "73f14a0c-ac12-4021-aeff-43e2f58a7e8c",
+        "fromTable": "Sales Orders",
+        "fromColumn": "LastEditedBy",
+        "toTable": "Application People",
+        "toColumn": "PersonID",
+        "isActive": false
+      },
+      {
+        "name": "f59796dc-5c1d-4daa-a074-0c76a3a6a665",
+        "fromTable": "Sales Orders",
+        "fromColumn": "PickedByPersonID",
+        "toTable": "Application People",
+        "toColumn": "PersonID",
+        "isActive": false
+      },
+      {
+        "name": "459fce3c-1c13-487c-bc88-18e8787ef781",
+        "fromTable": "Sales Invoices",
+        "fromColumn": "BillToCustomerID",
+        "toTable": "Sales Customers",
+        "toColumn": "CustomerID",
+        "isActive": false
+      },
+      {
+        "name": "22f27d8b-e81d-4d7e-8eb7-e93a9c492d09",
+        "fromTable": "Sales Invoices",
+        "fromColumn": "CustomerID",
+        "toTable": "Sales Customers",
+        "toColumn": "CustomerID",
+        "isActive": false
+      },
+      {
+        "name": "675454f2-a0df-427d-8eb6-a19767954cba",
+        "fromTable": "Sales Orders",
+        "fromColumn": "CustomerID",
+        "toTable": "Sales Customers",
+        "toColumn": "CustomerID",
+        "isActive": false
+      },
+      {
+        "name": "ad27fa94-d0a0-42bb-9814-fee92bbe74d4",
+        "fromTable": "Sales Invoices",
+        "fromColumn": "OrderID",
+        "toTable": "Sales Orders",
+        "toColumn": "OrderID",
+        "isActive": false
+      },
+      {
+        "name": "ab104dbd-1e7e-410e-b942-65459db9cc45",
+        "fromTable": "Sales OrderLines",
+        "fromColumn": "OrderID",
+        "toTable": "Sales Orders",
+        "toColumn": "OrderID",
+        "isActive": false
+      },
+      {
+        "name": "2e73f8a2-5fa2-4088-b3eb-47af08ea8fce",
+        "fromTable": "Sales Customers",
+        "fromColumn": "PrimaryContactPersonID",
+        "toTable": "Application People",
+        "toColumn": "PersonID"
+      },
+      {
+        "name": "63e8f739-beee-49be-b19e-8493ffe41910",
+        "fromTable": "Sales Invoices",
+        "fromColumn": "ContactPersonID",
+        "toTable": "Application People",
+        "toColumn": "PersonID"
+      },
+      {
+        "name": "f44299e8-3a5f-4df8-bdf1-50510e498f92",
+        "fromTable": "Sales OrderLines",
+        "fromColumn": "LastEditedBy",
+        "toTable": "Application People",
+        "toColumn": "PersonID"
+      },
+      {
+        "name": "81858ae8-39ba-43e8-be95-f832ee639ec1",
+        "fromTable": "Sales Orders",
+        "fromColumn": "SalespersonPersonID",
+        "toTable": "Application People",
+        "toColumn": "PersonID"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "500"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}
