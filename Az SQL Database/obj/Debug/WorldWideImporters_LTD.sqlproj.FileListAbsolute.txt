@@ -1,0 +1,9 @@
+C:\Code\devopsforbi\Az SQL Database\bin\Debug\WorldWideImporters_LTD.dacpac
+C:\Code\devopsforbi\Az SQL Database\obj\Debug\Model.xml
+C:\Code\devopsforbi\Az SQL Database\obj\Debug\refactor.xml
+C:\Code\devopsforbi\Az SQL Database\obj\Debug\postdeploy.sql
+C:\Code\devopsforbi\Az SQL Database\obj\Debug\predeploy.sql
+C:\Code\devopsforbi\Az SQL Database\obj\Debug\WorldWideImporters_LTD.dll
+C:\Code\devopsforbi\Az SQL Database\obj\Debug\WorldWideImporters_LTD.pdb
+C:\Code\devopsforbi\Az SQL Database\bin\Debug\WorldWideImporters_LTD.dll
+C:\Code\devopsforbi\Az SQL Database\bin\Debug\WorldWideImporters_LTD.pdb
