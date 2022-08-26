@@ -1,1 +1,1 @@
-﻿CREATE SCHEMA [Sales]
+﻿CREATE SCHEMA [Sales];

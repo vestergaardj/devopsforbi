@@ -1,1 +1,1 @@
-﻿CREATE SCHEMA [Application]
+﻿CREATE SCHEMA [Application];

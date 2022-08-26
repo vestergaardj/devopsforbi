@@ -1,1 +1,1 @@
-﻿CREATE SCHEMA [Sequences]
+﻿CREATE SCHEMA [Sequences];
