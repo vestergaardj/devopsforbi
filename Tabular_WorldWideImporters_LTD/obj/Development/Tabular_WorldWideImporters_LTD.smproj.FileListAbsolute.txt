@@ -1,0 +1,7 @@
+C:\Code\devopsforbi\Tabular_WorldWideImporters_LTD\bin\Model.asdatabase
+C:\Code\devopsforbi\Tabular_WorldWideImporters_LTD\bin\Model.deploymenttargets
+C:\Code\devopsforbi\Tabular_WorldWideImporters_LTD\bin\Model.deploymentoptions
+C:\Code\devopsforbi\Tabular_WorldWideImporters_LTD\obj\Development\Tabular_WorldWideImporters_LTD.smproj.CoreCompileInputs.cache
+C:\Code\devopsforbi\Tabular_WorldWideImporters_LTD\obj\Development\Model.asdatabase
+C:\Code\devopsforbi\Tabular_WorldWideImporters_LTD\obj\Development\Model.deploymentoptions
+C:\Code\devopsforbi\Tabular_WorldWideImporters_LTD\obj\Development\Model.deploymenttargets
