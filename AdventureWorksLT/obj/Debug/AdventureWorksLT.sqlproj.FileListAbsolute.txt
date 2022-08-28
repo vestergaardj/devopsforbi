@@ -1,0 +1,9 @@
+C:\Code\devopsforbi\AdventureWorksLT\bin\Debug\AdventureWorksLT.dacpac
+C:\Code\devopsforbi\AdventureWorksLT\obj\Debug\Model.xml
+C:\Code\devopsforbi\AdventureWorksLT\obj\Debug\refactor.xml
+C:\Code\devopsforbi\AdventureWorksLT\obj\Debug\postdeploy.sql
+C:\Code\devopsforbi\AdventureWorksLT\obj\Debug\predeploy.sql
+C:\Code\devopsforbi\AdventureWorksLT\obj\Debug\AdventureWorksLT.dll
+C:\Code\devopsforbi\AdventureWorksLT\obj\Debug\AdventureWorksLT.pdb
+C:\Code\devopsforbi\AdventureWorksLT\bin\Debug\AdventureWorksLT.dll
+C:\Code\devopsforbi\AdventureWorksLT\bin\Debug\AdventureWorksLT.pdb

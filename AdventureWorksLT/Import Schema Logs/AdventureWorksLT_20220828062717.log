@@ -1,0 +1,85 @@
+28/08/2022 08.27.17	This log contains information about the import schema operation into project 'AdventureWorksLT' on computer 'DESKTOP-NF3HBTH' by user 'Jens Vestergaard'.
+28/08/2022 08.27.17	Import of database schema has started.
+28/08/2022 08.27.21	Gathering logins
+28/08/2022 08.27.33	Gathering database credentials
+28/08/2022 08.27.33	Gathering database options
+28/08/2022 08.27.33	Gathering generic database scoped configuration option
+28/08/2022 08.27.33	Gathering users
+28/08/2022 08.27.33	Gathering roles
+28/08/2022 08.27.33	Gathering application roles
+28/08/2022 08.27.33	Gathering role memberships
+28/08/2022 08.27.33	Gathering filegroups
+28/08/2022 08.27.33	Gathering full-text catalogs
+28/08/2022 08.27.33	Gathering assemblies
+28/08/2022 08.27.33	Gathering certificates
+28/08/2022 08.27.33	Gathering symmetric keys
+28/08/2022 08.27.33	Gathering encrypted symmetric keys
+28/08/2022 08.27.33	Gathering schemas
+28/08/2022 08.27.33	Gathering XML schema collections
+28/08/2022 08.27.33	Gathering user-defined data types
+28/08/2022 08.27.33	Gathering user-defined types
+28/08/2022 08.27.33	Gathering table types
+28/08/2022 08.27.33	Gathering unique keys for table types
+28/08/2022 08.27.33	Gathering primary keys for table types
+28/08/2022 08.27.34	Gathering indexes for table types
+28/08/2022 08.27.34	Gathering check constraints for table types
+28/08/2022 08.27.34	Gathering default constraints for table types
+28/08/2022 08.27.34	Gathering partition functions
+28/08/2022 08.27.34	Gathering partition schemes
+28/08/2022 08.27.34	Gathering functions
+28/08/2022 08.27.34	Gathering encrypted functions
+28/08/2022 08.27.34	Gathering aggregates
+28/08/2022 08.27.34	Gathering procedures
+28/08/2022 08.27.35	Gathering encrypted procedures
+28/08/2022 08.27.35	Gathering tables
+28/08/2022 08.27.35	Gathering primary keys
+28/08/2022 08.27.35	Gathering unique constraints
+28/08/2022 08.27.35	Gathering foreign keys
+28/08/2022 08.27.35	Gathering default constraints
+28/08/2022 08.27.35	Gathering check constraints
+28/08/2022 08.27.35	Gathering views
+28/08/2022 08.27.35	Gathering encrypted views
+28/08/2022 08.27.35	Gathering indexes
+28/08/2022 08.27.35	Gathering statistics
+28/08/2022 08.27.35	Gathering full-text index stoplists
+28/08/2022 08.27.35	Gathering search property lists
+28/08/2022 08.27.35	Gathering search properties
+28/08/2022 08.27.35	Gathering full-text indexes
+28/08/2022 08.27.35	Gathering column store indexes
+28/08/2022 08.27.35	Gathering spatial indexes
+28/08/2022 08.27.35	Gathering XML indexes
+28/08/2022 08.27.35	Gathering Selective XML indexes
+28/08/2022 08.27.35	Gathering encrypted triggers
+28/08/2022 08.27.35	Gathering triggers
+28/08/2022 08.27.35	Gathering encrypted and clr ddl triggers
+28/08/2022 08.27.35	Gathering ddl triggers
+28/08/2022 08.27.35	Creating edge constraints
+28/08/2022 08.27.35	Gathering synonyms
+28/08/2022 08.27.35	Gathering defaults
+28/08/2022 08.27.35	Gathering data constraint uddt bindings
+28/08/2022 08.27.35	Gathering rules
+28/08/2022 08.27.35	Gathering data constraint uddt bindings
+28/08/2022 08.27.35	Gathering message types
+28/08/2022 08.27.36	Gathering queues
+28/08/2022 08.27.36	Gathering contracts
+28/08/2022 08.27.36	Gathering services
+28/08/2022 08.27.36	Gathering event notifications
+28/08/2022 08.27.36	Gathering remote service bindings
+28/08/2022 08.27.36	Gathering broker priorities
+28/08/2022 08.27.36	Gathering signatures
+28/08/2022 08.27.36	Gathering data compression options
+28/08/2022 08.27.36	Gathering sequence types
+28/08/2022 08.27.36	Gathering security policies
+28/08/2022 08.27.36	Gather column encryption keys
+28/08/2022 08.27.36	Gathering column master keys
+28/08/2022 08.27.36	Gathering external data sources
+28/08/2022 08.27.36	Gathering external tables
+28/08/2022 08.27.36	Gathering database permissions
+28/08/2022 08.27.36	Gathering extended properties
+28/08/2022 08.27.36	Gathering assemblies
+28/08/2022 08.27.37	Gathering logins
+28/08/2022 08.27.40	Scanning project for duplicate elements
+28/08/2022 08.27.41	Finished duplicate element processing
+28/08/2022 08.27.42	Finished importing database.
+28/08/2022 08.27.42	A summary of the import was saved to the following location: C:\Code\devopsforbi\AdventureWorksLT\Import Schema Logs\AdventureWorksLT_20220828062717.log
+28/08/2022 08.27.42	Click Finish to continue...
