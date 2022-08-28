@@ -16,7 +16,6 @@
           "authentication": null,
           "query": null
         },
-        "options": {},
         "credential": {
           "AuthenticationKind": "UsernamePassword",
           "Username": "cmsadmin",
@@ -31,6 +30,7 @@
           {
             "name": "SalesOrderID",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "SalesOrderID"
           },
           {
@@ -81,16 +81,19 @@
           {
             "name": "CustomerID",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "CustomerID"
           },
           {
             "name": "ShipToAddressID",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "ShipToAddressID"
           },
           {
             "name": "BillToAddressID",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "BillToAddressID"
           },
           {
@@ -106,21 +109,25 @@
           {
             "name": "SubTotal",
             "dataType": "decimal",
+            "isHidden": true,
             "sourceColumn": "SubTotal"
           },
           {
             "name": "TaxAmt",
             "dataType": "decimal",
+            "isHidden": true,
             "sourceColumn": "TaxAmt"
           },
           {
             "name": "Freight",
             "dataType": "decimal",
+            "isHidden": true,
             "sourceColumn": "Freight"
           },
           {
             "name": "TotalDue",
             "dataType": "decimal",
+            "isHidden": true,
             "sourceColumn": "TotalDue"
           },
           {
@@ -131,11 +138,13 @@
           {
             "name": "rowguid",
             "dataType": "string",
+            "isHidden": true,
             "sourceColumn": "rowguid"
           },
           {
             "name": "ModifiedDate",
             "dataType": "dateTime",
+            "isHidden": true,
             "sourceColumn": "ModifiedDate"
           }
         ],
@@ -154,6 +163,18 @@
               ]
             }
           }
+        ],
+        "measures": [
+          {
+            "name": "Total Freight",
+            "expression": "CALCULATE(SUM('SalesLT SalesOrderHeader'[Freight]))",
+            "formatString": "#,##0.00"
+          },
+          {
+            "name": "Total Due",
+            "expression": "CALCULATE(SUM('SalesLT SalesOrderHeader'[TotalDue]))",
+            "formatString": "#,##0.00"
+          }
         ]
       },
       {
@@ -162,11 +183,13 @@
           {
             "name": "SalesOrderID",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "SalesOrderID"
           },
           {
             "name": "SalesOrderDetailID",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "SalesOrderDetailID"
           },
           {
@@ -177,6 +200,7 @@
           {
             "name": "ProductID",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "ProductID"
           },
           {
@@ -197,11 +221,13 @@
           {
             "name": "rowguid",
             "dataType": "string",
+            "isHidden": true,
             "sourceColumn": "rowguid"
           },
           {
             "name": "ModifiedDate",
             "dataType": "dateTime",
+            "isHidden": true,
             "sourceColumn": "ModifiedDate"
           }
         ],
@@ -228,6 +254,7 @@
           {
             "name": "ProductID",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "ProductID"
           },
           {
@@ -268,11 +295,13 @@
           {
             "name": "ProductCategoryID",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "ProductCategoryID"
           },
           {
             "name": "ProductModelID",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "ProductModelID"
           },
           {
@@ -298,11 +327,13 @@
           {
             "name": "rowguid",
             "dataType": "string",
+            "isHidden": true,
             "sourceColumn": "rowguid"
           },
           {
             "name": "ModifiedDate",
             "dataType": "dateTime",
+            "isHidden": true,
             "sourceColumn": "ModifiedDate"
           }
         ],
@@ -329,6 +360,7 @@
           {
             "name": "CustomerID",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "CustomerID"
           },
           {
@@ -344,16 +376,19 @@
           {
             "name": "FirstName",
             "dataType": "string",
+            "isHidden": true,
             "sourceColumn": "FirstName"
           },
           {
             "name": "MiddleName",
             "dataType": "string",
+            "isHidden": true,
             "sourceColumn": "MiddleName"
           },
           {
             "name": "LastName",
             "dataType": "string",
+            "isHidden": true,
             "sourceColumn": "LastName"
           },
           {
@@ -384,22 +419,33 @@
           {
             "name": "PasswordHash",
             "dataType": "string",
+            "isHidden": true,
             "sourceColumn": "PasswordHash"
           },
           {
             "name": "PasswordSalt",
             "dataType": "string",
+            "isHidden": true,
             "sourceColumn": "PasswordSalt"
           },
           {
             "name": "rowguid",
             "dataType": "string",
+            "isHidden": true,
             "sourceColumn": "rowguid"
           },
           {
             "name": "ModifiedDate",
             "dataType": "dateTime",
+            "isHidden": true,
             "sourceColumn": "ModifiedDate"
+          },
+          {
+            "type": "calculated",
+            "name": "Full Name",
+            "dataType": "unknown",
+            "isDataTypeInferred": true,
+            "expression": "='SalesLT Customer'[FirstName] + ' ' + 'SalesLT Customer'[LastName]"
           }
         ],
         "partitions": [
@@ -425,11 +471,13 @@
           {
             "name": "ProductCategoryID",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "ProductCategoryID"
           },
           {
             "name": "ParentProductCategoryID",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "ParentProductCategoryID"
           },
           {
@@ -440,11 +488,13 @@
           {
             "name": "rowguid",
             "dataType": "string",
+            "isHidden": true,
             "sourceColumn": "rowguid"
           },
           {
             "name": "ModifiedDate",
             "dataType": "dateTime",
+            "isHidden": true,
             "sourceColumn": "ModifiedDate"
           }
         ],
@@ -502,6 +552,5 @@
         "value": "600"
       }
     ]
-  },
-  "id": "SemanticModel"
+  }
 }
